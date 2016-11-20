@@ -7,13 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		899849C18E6E2912B45911FC /* Pods_NeiHanDuanZi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC0B31C360658261DBC04ED5 /* Pods_NeiHanDuanZi.framework */; };
 		F2F006A81DE16007003E0984 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F006A71DE16007003E0984 /* AppDelegate.swift */; };
-		F2F006AA1DE16007003E0984 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F006A91DE16007003E0984 /* ViewController.swift */; };
-		F2F006AD1DE16007003E0984 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2F006AB1DE16007003E0984 /* Main.storyboard */; };
 		F2F006AF1DE16007003E0984 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2F006AE1DE16007003E0984 /* Assets.xcassets */; };
 		F2F006B21DE16007003E0984 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2F006B01DE16007003E0984 /* LaunchScreen.storyboard */; };
 		F2F006BD1DE16007003E0984 /* NeiHanDuanZiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F006BC1DE16007003E0984 /* NeiHanDuanZiTests.swift */; };
 		F2F006C81DE16007003E0984 /* NeiHanDuanZiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F006C71DE16007003E0984 /* NeiHanDuanZiUITests.swift */; };
+		F2F006E21DE162CE003E0984 /* UIView+LayerLine.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F006DF1DE162CE003E0984 /* UIView+LayerLine.m */; };
+		F2F006E31DE162CE003E0984 /* V_RollingTab.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F006E11DE162CE003E0984 /* V_RollingTab.m */; };
+		F2F006EC1DE16845003E0984 /* VC_HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F006EB1DE16845003E0984 /* VC_HomePage.swift */; };
+		F2F02A731DE16CC1003E0984 /* 58.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F02A681DE16CC1003E0984 /* 58.png */; };
+		F2F02A741DE16CC1003E0984 /* Icon-180.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F02A691DE16CC1003E0984 /* Icon-180.png */; };
+		F2F02A751DE16CC1003E0984 /* Icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F02A6A1DE16CC1003E0984 /* Icon-40.png */; };
+		F2F02A761DE16CC1003E0984 /* Icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F02A6B1DE16CC1003E0984 /* Icon-40@2x.png */; };
+		F2F02A771DE16CC1003E0984 /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F02A6C1DE16CC1003E0984 /* Icon-60@2x.png */; };
+		F2F02A781DE16CC1003E0984 /* Icon-87.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F02A6D1DE16CC1003E0984 /* Icon-87.png */; };
+		F2F02A791DE16CC1003E0984 /* 1242*2208.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F02A6F1DE16CC1003E0984 /* 1242*2208.png */; };
+		F2F02A7A1DE16CC1003E0984 /* 640*1136.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F02A701DE16CC1003E0984 /* 640*1136.png */; };
+		F2F02A7B1DE16CC1003E0984 /* 640*960.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F02A711DE16CC1003E0984 /* 640*960.png */; };
+		F2F02A7C1DE16CC1003E0984 /* 750*1334.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F02A721DE16CC1003E0984 /* 750*1334.png */; };
+		F2F02A7E1DE16D5A003E0984 /* Icon-60.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F02A7D1DE16D5A003E0984 /* Icon-60.png */; };
+		F2F02A801DE16DE0003E0984 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2F02A7F1DE16DE0003E0984 /* Images.xcassets */; };
+		F2F02A831DE17035003E0984 /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F02A821DE17035003E0984 /* Tools.swift */; };
+		F2F02A891DE17473003E0984 /* M_HomePageItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F02A881DE17473003E0984 /* M_HomePageItems.swift */; };
+		F2F02A8B1DE17A97003E0984 /* APIManage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F02A8A1DE17A97003E0984 /* APIManage.swift */; };
+		F2F02A8F1DE1939F003E0984 /* CellNieHanImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F02A8D1DE1939F003E0984 /* CellNieHanImage.swift */; };
+		F2F02A901DE1939F003E0984 /* CellNieHanImage.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2F02A8E1DE1939F003E0984 /* CellNieHanImage.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,10 +53,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9F6928D71A84AFEF4FE6DC5D /* Pods-NeiHanDuanZi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeiHanDuanZi.release.xcconfig"; path = "Pods/Target Support Files/Pods-NeiHanDuanZi/Pods-NeiHanDuanZi.release.xcconfig"; sourceTree = "<group>"; };
+		BC0B31C360658261DBC04ED5 /* Pods_NeiHanDuanZi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NeiHanDuanZi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFBD512A280E6D7B86E80096 /* Pods-NeiHanDuanZi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeiHanDuanZi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NeiHanDuanZi/Pods-NeiHanDuanZi.debug.xcconfig"; sourceTree = "<group>"; };
 		F2F006A41DE16007003E0984 /* NeiHanDuanZi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeiHanDuanZi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2F006A71DE16007003E0984 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F2F006A91DE16007003E0984 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F2F006AC1DE16007003E0984 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F2F006AE1DE16007003E0984 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2F006B11DE16007003E0984 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F2F006B31DE16007003E0984 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +67,29 @@
 		F2F006C31DE16007003E0984 /* NeiHanDuanZiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NeiHanDuanZiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2F006C71DE16007003E0984 /* NeiHanDuanZiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeiHanDuanZiUITests.swift; sourceTree = "<group>"; };
 		F2F006C91DE16007003E0984 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2F006DE1DE162CE003E0984 /* UIView+LayerLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LayerLine.h"; sourceTree = "<group>"; };
+		F2F006DF1DE162CE003E0984 /* UIView+LayerLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LayerLine.m"; sourceTree = "<group>"; };
+		F2F006E01DE162CE003E0984 /* V_RollingTab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = V_RollingTab.h; sourceTree = "<group>"; };
+		F2F006E11DE162CE003E0984 /* V_RollingTab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = V_RollingTab.m; sourceTree = "<group>"; };
+		F2F006E91DE1675E003E0984 /* NeiHanDuanZiBridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NeiHanDuanZiBridgingHeader.h; path = BridgingHeader/NeiHanDuanZiBridgingHeader.h; sourceTree = "<group>"; };
+		F2F006EB1DE16845003E0984 /* VC_HomePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VC_HomePage.swift; path = "功能模块/首页/VC/首页/VC_HomePage.swift"; sourceTree = "<group>"; };
+		F2F02A681DE16CC1003E0984 /* 58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 58.png; sourceTree = "<group>"; };
+		F2F02A691DE16CC1003E0984 /* Icon-180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-180.png"; sourceTree = "<group>"; };
+		F2F02A6A1DE16CC1003E0984 /* Icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40.png"; sourceTree = "<group>"; };
+		F2F02A6B1DE16CC1003E0984 /* Icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40@2x.png"; sourceTree = "<group>"; };
+		F2F02A6C1DE16CC1003E0984 /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
+		F2F02A6D1DE16CC1003E0984 /* Icon-87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-87.png"; sourceTree = "<group>"; };
+		F2F02A6F1DE16CC1003E0984 /* 1242*2208.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1242*2208.png"; sourceTree = "<group>"; };
+		F2F02A701DE16CC1003E0984 /* 640*1136.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "640*1136.png"; sourceTree = "<group>"; };
+		F2F02A711DE16CC1003E0984 /* 640*960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "640*960.png"; sourceTree = "<group>"; };
+		F2F02A721DE16CC1003E0984 /* 750*1334.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "750*1334.png"; sourceTree = "<group>"; };
+		F2F02A7D1DE16D5A003E0984 /* Icon-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60.png"; sourceTree = "<group>"; };
+		F2F02A7F1DE16DE0003E0984 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F2F02A821DE17035003E0984 /* Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Tools.swift; path = Tools/Tools.swift; sourceTree = "<group>"; };
+		F2F02A881DE17473003E0984 /* M_HomePageItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = M_HomePageItems.swift; path = "功能模块/首页/Model/首页/M_HomePageItems.swift"; sourceTree = "<group>"; };
+		F2F02A8A1DE17A97003E0984 /* APIManage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIManage.swift; path = Tools/APIManage.swift; sourceTree = "<group>"; };
+		F2F02A8D1DE1939F003E0984 /* CellNieHanImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CellNieHanImage.swift; path = "功能模块/首页/Cell/CellNieHanImage.swift"; sourceTree = "<group>"; };
+		F2F02A8E1DE1939F003E0984 /* CellNieHanImage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CellNieHanImage.xib; path = "功能模块/首页/Cell/CellNieHanImage.xib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				899849C18E6E2912B45911FC /* Pods_NeiHanDuanZi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +118,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		83970DE3E651052DBAA0A0C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BC0B31C360658261DBC04ED5 /* Pods_NeiHanDuanZi.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		922275652CE2E0EFEEF538B0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BFBD512A280E6D7B86E80096 /* Pods-NeiHanDuanZi.debug.xcconfig */,
+				9F6928D71A84AFEF4FE6DC5D /* Pods-NeiHanDuanZi.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F2F0069B1DE16007003E0984 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +142,8 @@
 				F2F006BB1DE16007003E0984 /* NeiHanDuanZiTests */,
 				F2F006C61DE16007003E0984 /* NeiHanDuanZiUITests */,
 				F2F006A51DE16007003E0984 /* Products */,
+				922275652CE2E0EFEEF538B0 /* Pods */,
+				83970DE3E651052DBAA0A0C9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +160,16 @@
 		F2F006A61DE16007003E0984 /* NeiHanDuanZi */ = {
 			isa = PBXGroup;
 			children = (
+				F2F02A811DE16F74003E0984 /* Tools */,
+				F2F02A651DE16CC1003E0984 /* Source */,
+				F2F006E71DE166A3003E0984 /* BridgingHeader */,
+				F2F006E41DE162D5003E0984 /* 功能模块 */,
+				F2F006DB1DE162CE003E0984 /* Public */,
 				F2F006A71DE16007003E0984 /* AppDelegate.swift */,
-				F2F006A91DE16007003E0984 /* ViewController.swift */,
-				F2F006AB1DE16007003E0984 /* Main.storyboard */,
 				F2F006AE1DE16007003E0984 /* Assets.xcassets */,
 				F2F006B01DE16007003E0984 /* LaunchScreen.storyboard */,
 				F2F006B31DE16007003E0984 /* Info.plist */,
+				F2F02A7F1DE16DE0003E0984 /* Images.xcassets */,
 			);
 			path = NeiHanDuanZi;
 			sourceTree = "<group>";
@@ -125,6 +192,167 @@
 			path = NeiHanDuanZiUITests;
 			sourceTree = "<group>";
 		};
+		F2F006DB1DE162CE003E0984 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				F2F006DC1DE162CE003E0984 /* PublicView */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		F2F006DC1DE162CE003E0984 /* PublicView */ = {
+			isa = PBXGroup;
+			children = (
+				F2F006DD1DE162CE003E0984 /* 滚动标签 */,
+			);
+			path = PublicView;
+			sourceTree = "<group>";
+		};
+		F2F006DD1DE162CE003E0984 /* 滚动标签 */ = {
+			isa = PBXGroup;
+			children = (
+				F2F006DE1DE162CE003E0984 /* UIView+LayerLine.h */,
+				F2F006DF1DE162CE003E0984 /* UIView+LayerLine.m */,
+				F2F006E01DE162CE003E0984 /* V_RollingTab.h */,
+				F2F006E11DE162CE003E0984 /* V_RollingTab.m */,
+			);
+			path = "滚动标签";
+			sourceTree = "<group>";
+		};
+		F2F006E41DE162D5003E0984 /* 功能模块 */ = {
+			isa = PBXGroup;
+			children = (
+				F2F006E51DE162F4003E0984 /* 首页 */,
+			);
+			name = "功能模块";
+			sourceTree = "<group>";
+		};
+		F2F006E51DE162F4003E0984 /* 首页 */ = {
+			isa = PBXGroup;
+			children = (
+				F2F02A911DE1942B003E0984 /* Views */,
+				F2F02A8C1DE192A9003E0984 /* Cell */,
+				F2F02A861DE1740E003E0984 /* Model */,
+				F2F006E61DE162FE003E0984 /* VC */,
+			);
+			name = "首页";
+			sourceTree = "<group>";
+		};
+		F2F006E61DE162FE003E0984 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				F2F006EA1DE167EC003E0984 /* 首页 */,
+			);
+			name = VC;
+			sourceTree = "<group>";
+		};
+		F2F006E71DE166A3003E0984 /* BridgingHeader */ = {
+			isa = PBXGroup;
+			children = (
+				F2F006E91DE1675E003E0984 /* NeiHanDuanZiBridgingHeader.h */,
+			);
+			name = BridgingHeader;
+			sourceTree = "<group>";
+		};
+		F2F006EA1DE167EC003E0984 /* 首页 */ = {
+			isa = PBXGroup;
+			children = (
+				F2F006EB1DE16845003E0984 /* VC_HomePage.swift */,
+			);
+			name = "首页";
+			sourceTree = "<group>";
+		};
+		F2F02A651DE16CC1003E0984 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				F2F02A661DE16CC1003E0984 /* IMG */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		F2F02A661DE16CC1003E0984 /* IMG */ = {
+			isa = PBXGroup;
+			children = (
+				F2F02A671DE16CC1003E0984 /* Icon */,
+				F2F02A6E1DE16CC1003E0984 /* Lunchimage */,
+			);
+			path = IMG;
+			sourceTree = "<group>";
+		};
+		F2F02A671DE16CC1003E0984 /* Icon */ = {
+			isa = PBXGroup;
+			children = (
+				F2F02A7D1DE16D5A003E0984 /* Icon-60.png */,
+				F2F02A681DE16CC1003E0984 /* 58.png */,
+				F2F02A691DE16CC1003E0984 /* Icon-180.png */,
+				F2F02A6A1DE16CC1003E0984 /* Icon-40.png */,
+				F2F02A6B1DE16CC1003E0984 /* Icon-40@2x.png */,
+				F2F02A6C1DE16CC1003E0984 /* Icon-60@2x.png */,
+				F2F02A6D1DE16CC1003E0984 /* Icon-87.png */,
+			);
+			path = Icon;
+			sourceTree = "<group>";
+		};
+		F2F02A6E1DE16CC1003E0984 /* Lunchimage */ = {
+			isa = PBXGroup;
+			children = (
+				F2F02A6F1DE16CC1003E0984 /* 1242*2208.png */,
+				F2F02A701DE16CC1003E0984 /* 640*1136.png */,
+				F2F02A711DE16CC1003E0984 /* 640*960.png */,
+				F2F02A721DE16CC1003E0984 /* 750*1334.png */,
+			);
+			path = Lunchimage;
+			sourceTree = "<group>";
+		};
+		F2F02A811DE16F74003E0984 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				F2F02A821DE17035003E0984 /* Tools.swift */,
+				F2F02A8A1DE17A97003E0984 /* APIManage.swift */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
+		F2F02A861DE1740E003E0984 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F2F02A871DE17416003E0984 /* 首页 */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F2F02A871DE17416003E0984 /* 首页 */ = {
+			isa = PBXGroup;
+			children = (
+				F2F02A881DE17473003E0984 /* M_HomePageItems.swift */,
+			);
+			name = "首页";
+			sourceTree = "<group>";
+		};
+		F2F02A8C1DE192A9003E0984 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F2F02A8D1DE1939F003E0984 /* CellNieHanImage.swift */,
+				F2F02A8E1DE1939F003E0984 /* CellNieHanImage.xib */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		F2F02A911DE1942B003E0984 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F2F02A921DE19433003E0984 /* 评论 */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		F2F02A921DE19433003E0984 /* 评论 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "评论";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +360,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F2F006CC1DE16007003E0984 /* Build configuration list for PBXNativeTarget "NeiHanDuanZi" */;
 			buildPhases = (
+				91BA70651957804C5863299F /* [CP] Check Pods Manifest.lock */,
 				F2F006A01DE16007003E0984 /* Sources */,
 				F2F006A11DE16007003E0984 /* Frameworks */,
 				F2F006A21DE16007003E0984 /* Resources */,
+				37EBC9C62DFE5800AE8B4C52 /* [CP] Embed Pods Frameworks */,
+				DE9B8017B651C6E4D1821F2A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -235,9 +466,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2F02A791DE16CC1003E0984 /* 1242*2208.png in Resources */,
 				F2F006B21DE16007003E0984 /* LaunchScreen.storyboard in Resources */,
+				F2F02A731DE16CC1003E0984 /* 58.png in Resources */,
+				F2F02A741DE16CC1003E0984 /* Icon-180.png in Resources */,
+				F2F02A7B1DE16CC1003E0984 /* 640*960.png in Resources */,
+				F2F02A781DE16CC1003E0984 /* Icon-87.png in Resources */,
+				F2F02A771DE16CC1003E0984 /* Icon-60@2x.png in Resources */,
+				F2F02A7E1DE16D5A003E0984 /* Icon-60.png in Resources */,
+				F2F02A761DE16CC1003E0984 /* Icon-40@2x.png in Resources */,
+				F2F02A801DE16DE0003E0984 /* Images.xcassets in Resources */,
+				F2F02A7C1DE16CC1003E0984 /* 750*1334.png in Resources */,
 				F2F006AF1DE16007003E0984 /* Assets.xcassets in Resources */,
-				F2F006AD1DE16007003E0984 /* Main.storyboard in Resources */,
+				F2F02A7A1DE16CC1003E0984 /* 640*1136.png in Resources */,
+				F2F02A751DE16CC1003E0984 /* Icon-40.png in Resources */,
+				F2F02A901DE1939F003E0984 /* CellNieHanImage.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,13 +500,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		37EBC9C62DFE5800AE8B4C52 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NeiHanDuanZi/Pods-NeiHanDuanZi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91BA70651957804C5863299F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DE9B8017B651C6E4D1821F2A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NeiHanDuanZi/Pods-NeiHanDuanZi-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F2F006A01DE16007003E0984 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2F006AA1DE16007003E0984 /* ViewController.swift in Sources */,
+				F2F006E31DE162CE003E0984 /* V_RollingTab.m in Sources */,
+				F2F006E21DE162CE003E0984 /* UIView+LayerLine.m in Sources */,
+				F2F02A8B1DE17A97003E0984 /* APIManage.swift in Sources */,
 				F2F006A81DE16007003E0984 /* AppDelegate.swift in Sources */,
+				F2F006EC1DE16845003E0984 /* VC_HomePage.swift in Sources */,
+				F2F02A891DE17473003E0984 /* M_HomePageItems.swift in Sources */,
+				F2F02A8F1DE1939F003E0984 /* CellNieHanImage.swift in Sources */,
+				F2F02A831DE17035003E0984 /* Tools.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,14 +596,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F2F006AB1DE16007003E0984 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F2F006AC1DE16007003E0984 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F2F006B01DE16007003E0984 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -413,27 +702,35 @@
 		};
 		F2F006CD1DE16007003E0984 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFBD512A280E6D7B86E80096 /* Pods-NeiHanDuanZi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 3G8327GJ7X;
 				INFOPLIST_FILE = NeiHanDuanZi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ChenDongZhi.NeiHanDuanZi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/chendongzhi/Desktop/NeiHanDuanZi/NeiHanDuanZi/BridgingHeader/NeiHanDuanZiBridgingHeader.h;
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		F2F006CE1DE16007003E0984 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F6928D71A84AFEF4FE6DC5D /* Pods-NeiHanDuanZi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 3G8327GJ7X;
 				INFOPLIST_FILE = NeiHanDuanZi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ChenDongZhi.NeiHanDuanZi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/chendongzhi/Desktop/NeiHanDuanZi/NeiHanDuanZi/BridgingHeader/NeiHanDuanZiBridgingHeader.h;
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -514,6 +811,7 @@
 				F2F006CE1DE16007003E0984 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F2F006CF1DE16007003E0984 /* Build configuration list for PBXNativeTarget "NeiHanDuanZiTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +820,7 @@
 				F2F006D11DE16007003E0984 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F2F006D21DE16007003E0984 /* Build configuration list for PBXNativeTarget "NeiHanDuanZiUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +829,7 @@
 				F2F006D41DE16007003E0984 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

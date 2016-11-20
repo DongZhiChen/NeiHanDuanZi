@@ -1,0 +1,6 @@
+framework module Pods_NeiHanDuanZi {
+  umbrella header "Pods-NeiHanDuanZi-umbrella.h"
+
+  export *
+  module * { export * }
+}
