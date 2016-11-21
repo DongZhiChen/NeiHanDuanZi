@@ -33,6 +33,8 @@
 		F2F02A8B1DE17A97003E0984 /* APIManage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F02A8A1DE17A97003E0984 /* APIManage.swift */; };
 		F2F02A8F1DE1939F003E0984 /* CellNieHanImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F02A8D1DE1939F003E0984 /* CellNieHanImage.swift */; };
 		F2F02A901DE1939F003E0984 /* CellNieHanImage.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2F02A8E1DE1939F003E0984 /* CellNieHanImage.xib */; };
+		F2F611B61DE395DF005C8E88 /* M_Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F611B51DE395DF005C8E88 /* M_Image.swift */; };
+		F2F611B91DE3989C005C8E88 /* V_ImageList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F611B81DE3989C005C8E88 /* V_ImageList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +92,8 @@
 		F2F02A8A1DE17A97003E0984 /* APIManage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIManage.swift; path = Tools/APIManage.swift; sourceTree = "<group>"; };
 		F2F02A8D1DE1939F003E0984 /* CellNieHanImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CellNieHanImage.swift; path = "功能模块/首页/Cell/CellNieHanImage.swift"; sourceTree = "<group>"; };
 		F2F02A8E1DE1939F003E0984 /* CellNieHanImage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CellNieHanImage.xib; path = "功能模块/首页/Cell/CellNieHanImage.xib"; sourceTree = "<group>"; };
+		F2F611B51DE395DF005C8E88 /* M_Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = M_Image.swift; path = "功能模块/首页/Model/图片/M_Image.swift"; sourceTree = "<group>"; };
+		F2F611B81DE3989C005C8E88 /* V_ImageList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = V_ImageList.swift; path = "功能模块/首页/Views/图片列表/V_ImageList.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -316,6 +320,7 @@
 		F2F02A861DE1740E003E0984 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F2F611B41DE395A9005C8E88 /* 图片 */,
 				F2F02A871DE17416003E0984 /* 首页 */,
 			);
 			name = Model;
@@ -341,6 +346,7 @@
 		F2F02A911DE1942B003E0984 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F2F611B71DE39841005C8E88 /* 图片列表 */,
 				F2F02A921DE19433003E0984 /* 评论 */,
 			);
 			name = Views;
@@ -351,6 +357,22 @@
 			children = (
 			);
 			name = "评论";
+			sourceTree = "<group>";
+		};
+		F2F611B41DE395A9005C8E88 /* 图片 */ = {
+			isa = PBXGroup;
+			children = (
+				F2F611B51DE395DF005C8E88 /* M_Image.swift */,
+			);
+			name = "图片";
+			sourceTree = "<group>";
+		};
+		F2F611B71DE39841005C8E88 /* 图片列表 */ = {
+			isa = PBXGroup;
+			children = (
+				F2F611B81DE3989C005C8E88 /* V_ImageList.swift */,
+			);
+			name = "图片列表";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -558,8 +580,10 @@
 				F2F02A8B1DE17A97003E0984 /* APIManage.swift in Sources */,
 				F2F006A81DE16007003E0984 /* AppDelegate.swift in Sources */,
 				F2F006EC1DE16845003E0984 /* VC_HomePage.swift in Sources */,
+				F2F611B61DE395DF005C8E88 /* M_Image.swift in Sources */,
 				F2F02A891DE17473003E0984 /* M_HomePageItems.swift in Sources */,
 				F2F02A8F1DE1939F003E0984 /* CellNieHanImage.swift in Sources */,
+				F2F611B91DE3989C005C8E88 /* V_ImageList.swift in Sources */,
 				F2F02A831DE17035003E0984 /* Tools.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

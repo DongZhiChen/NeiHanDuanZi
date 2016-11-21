@@ -8,6 +8,8 @@
 
 import UIKit
 
+let cellImageID:String = "cellImageID"
+
 class CellNieHanImage: UITableViewCell {
 
     override func awakeFromNib() {
@@ -20,5 +22,7 @@ class CellNieHanImage: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    
     
 }

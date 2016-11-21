@@ -31,7 +31,6 @@ class VC_HomePage: UIViewController,V_RollingTabDelegate {
             for(_,subJson):(String, JSON) in data{
             
                 let tabItem:M_HomePageItems = M_HomePageItems.init(dict: subJson.dictionaryObject as! [String:AnyObject]);
-                
                 self.tabsData .add(tabItem);
                 
             }

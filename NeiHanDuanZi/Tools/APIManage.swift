@@ -9,6 +9,7 @@
 import UIKit
 
 let API_tabs:String = "http://is.snssdk.com/neihan/service/tabs";
+let API_Image:String = "http://ic.snssdk.com/neihan/stream/mix/v1/?content_type=-103";
 
 class APIManage: NSObject {
 
