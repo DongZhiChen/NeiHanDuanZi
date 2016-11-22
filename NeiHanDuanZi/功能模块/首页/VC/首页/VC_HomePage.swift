@@ -38,6 +38,9 @@ class VC_HomePage: UIViewController,V_RollingTabDelegate {
         };
         
         
+        let imageList:V_ImageList = V_ImageList.init(frame: CGRect.init(x: 0, y: 40, width: mainSize.width, height: mainSize.height-40));
+        self.view.addSubview(imageList);
+        
     }
 
     

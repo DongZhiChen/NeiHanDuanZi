@@ -21,15 +21,26 @@ class M_Image: NSObject {
     var repin_count:NSInteger!;
     var bury_count:NSInteger!;
     var share_count:NSInteger!;
+    var favorite_count:NSInteger!;
+    var share_url:String!;
+    var comment_count:NSInteger!;
     
     init(dict:[String:AnyObject]) {
         
         super.init();
         
-        let dictGroup:[String:AnyObject] = dict["group"] as! [String : AnyObject];
-        let dictUser:[String:AnyObject] = dictGroup["user"] as! [String : AnyObject];
+        let group:[String:AnyObject] = dict["group"] as! [String : AnyObject];
         
-        self.name = dictUser["name"] as! String!;
+        let user:[String:AnyObject] = group["user"] as! [String : AnyObject];
+        self.name = user["name"] as! String!;
+        self.avatar_url = user["avatar_url"] as! String;
+        
+        self.content = group["content"] as! String;
+        self.share_url = group["share_url"] as! String;
+        self.comment_count = group["comment_count"] as! NSInteger;
+        self.category_name = group["category_name"] as! String;
+        self.repin_count = group["repin_count"] as! NSInteger;
+        self.digg_count = group["digg_count"] as! NSInteger;
         
     }
 }

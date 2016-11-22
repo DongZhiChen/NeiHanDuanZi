@@ -13,7 +13,7 @@ import SwiftyJSON
 class V_ImageList: UIView ,UITableViewDelegate,UITableViewDataSource{
 
     var TB_ImageList:UITableView!;
-    var arrayImageData:NSMutableArray!;
+    var arrayImageData:NSMutableArray = [];
     
    override init(frame: CGRect) {
         
@@ -24,6 +24,10 @@ class V_ImageList: UIView ,UITableViewDelegate,UITableViewDataSource{
     TB_ImageList.dataSource = self;
     TB_ImageList.register(CellNieHanImage.self, forCellReuseIdentifier: cellImageID);
     self .addSubview(TB_ImageList);
+    
+    
+    
+    self.requestImageData();
     
     }
     
@@ -45,13 +49,16 @@ class V_ImageList: UIView ,UITableViewDelegate,UITableViewDataSource{
         Alamofire.request(API_Image).responseJSON { (response) in
             
             let json = JSON.init(response.result.value);
-            let data = json["data"];
+            let data = json["data"]["data"];
             
-            for(_,subJson):(String, JSON) in data{
+            for (_,dictData):(String,JSON) in data {
                 
-                
+                let imageModel:M_Image = M_Image.init(dict: dictData.dictionaryObject as! [String : AnyObject]);
+                self.arrayImageData .add(imageModel);
                 
             }
+            
+           
             
         };
 
