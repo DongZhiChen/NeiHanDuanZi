@@ -22,7 +22,7 @@ class V_ImageList: UIView ,UITableViewDelegate,UITableViewDataSource{
     TB_ImageList = UITableView.init(frame: self.bounds, style: .plain);
     TB_ImageList.delegate = self;
     TB_ImageList.dataSource = self;
-    TB_ImageList.register(CellNieHanImage.self, forCellReuseIdentifier: cellImageID);
+    TB_ImageList.register(UINib.init(nibName: "CellNeiHanImage", bundle: nil), forCellReuseIdentifier: cellImageID)
     self .addSubview(TB_ImageList);
     
     
@@ -38,7 +38,7 @@ class V_ImageList: UIView ,UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 10;
+        return self.arrayImageData.count;
         
     }
     
@@ -58,7 +58,7 @@ class V_ImageList: UIView ,UITableViewDelegate,UITableViewDataSource{
                 
             }
             
-           
+            self.TB_ImageList .reloadData();
             
         };
 
@@ -67,15 +67,17 @@ class V_ImageList: UIView ,UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell:CellNieHanImage = tableView.dequeueReusableCell(withIdentifier: cellImageID) as! CellNieHanImage;
+        let cell:CellNeiHanImage = tableView.dequeueReusableCell(withIdentifier: cellImageID) as! CellNeiHanImage;
         
+        let imageModel:M_Image = self.arrayImageData[indexPath.row] as! M_Image;
+        cell.setCellNeiHanImageData(imageData: imageModel);
         return cell;
         
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
-        return 10.0;
+        return 200.0;
     }
 
 }

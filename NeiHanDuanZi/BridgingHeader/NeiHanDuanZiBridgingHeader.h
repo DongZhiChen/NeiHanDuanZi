@@ -10,5 +10,6 @@
 #define NeiHanDuanZiBridgingHeader_h
 
 #import "V_RollingTab.h"
+#import <SDWebImage/UIImageView+WebCache.h>
 
 #endif /* NeiHanDuanZiBridgingHeader_h */

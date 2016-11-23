@@ -31,8 +31,8 @@
 		F2F02A831DE17035003E0984 /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F02A821DE17035003E0984 /* Tools.swift */; };
 		F2F02A891DE17473003E0984 /* M_HomePageItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F02A881DE17473003E0984 /* M_HomePageItems.swift */; };
 		F2F02A8B1DE17A97003E0984 /* APIManage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F02A8A1DE17A97003E0984 /* APIManage.swift */; };
-		F2F02A8F1DE1939F003E0984 /* CellNieHanImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F02A8D1DE1939F003E0984 /* CellNieHanImage.swift */; };
-		F2F02A901DE1939F003E0984 /* CellNieHanImage.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2F02A8E1DE1939F003E0984 /* CellNieHanImage.xib */; };
+		F2F02A8F1DE1939F003E0984 /* CellNeiHanImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F02A8D1DE1939F003E0984 /* CellNeiHanImage.swift */; };
+		F2F02A901DE1939F003E0984 /* CellNeiHanImage.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2F02A8E1DE1939F003E0984 /* CellNeiHanImage.xib */; };
 		F2F611B61DE395DF005C8E88 /* M_Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F611B51DE395DF005C8E88 /* M_Image.swift */; };
 		F2F611B91DE3989C005C8E88 /* V_ImageList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F611B81DE3989C005C8E88 /* V_ImageList.swift */; };
 /* End PBXBuildFile section */
@@ -90,8 +90,8 @@
 		F2F02A821DE17035003E0984 /* Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Tools.swift; path = Tools/Tools.swift; sourceTree = "<group>"; };
 		F2F02A881DE17473003E0984 /* M_HomePageItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = M_HomePageItems.swift; path = "功能模块/首页/Model/首页/M_HomePageItems.swift"; sourceTree = "<group>"; };
 		F2F02A8A1DE17A97003E0984 /* APIManage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIManage.swift; path = Tools/APIManage.swift; sourceTree = "<group>"; };
-		F2F02A8D1DE1939F003E0984 /* CellNieHanImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CellNieHanImage.swift; path = "功能模块/首页/Cell/CellNieHanImage.swift"; sourceTree = "<group>"; };
-		F2F02A8E1DE1939F003E0984 /* CellNieHanImage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CellNieHanImage.xib; path = "功能模块/首页/Cell/CellNieHanImage.xib"; sourceTree = "<group>"; };
+		F2F02A8D1DE1939F003E0984 /* CellNeiHanImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CellNeiHanImage.swift; path = "功能模块/首页/Cell/CellNeiHanImage.swift"; sourceTree = "<group>"; };
+		F2F02A8E1DE1939F003E0984 /* CellNeiHanImage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CellNeiHanImage.xib; path = "功能模块/首页/Cell/CellNeiHanImage.xib"; sourceTree = "<group>"; };
 		F2F611B51DE395DF005C8E88 /* M_Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = M_Image.swift; path = "功能模块/首页/Model/图片/M_Image.swift"; sourceTree = "<group>"; };
 		F2F611B81DE3989C005C8E88 /* V_ImageList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = V_ImageList.swift; path = "功能模块/首页/Views/图片列表/V_ImageList.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -337,8 +337,8 @@
 		F2F02A8C1DE192A9003E0984 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				F2F02A8D1DE1939F003E0984 /* CellNieHanImage.swift */,
-				F2F02A8E1DE1939F003E0984 /* CellNieHanImage.xib */,
+				F2F02A8D1DE1939F003E0984 /* CellNeiHanImage.swift */,
+				F2F02A8E1DE1939F003E0984 /* CellNeiHanImage.xib */,
 			);
 			name = Cell;
 			sourceTree = "<group>";
@@ -502,7 +502,7 @@
 				F2F006AF1DE16007003E0984 /* Assets.xcassets in Resources */,
 				F2F02A7A1DE16CC1003E0984 /* 640*1136.png in Resources */,
 				F2F02A751DE16CC1003E0984 /* Icon-40.png in Resources */,
-				F2F02A901DE1939F003E0984 /* CellNieHanImage.xib in Resources */,
+				F2F02A901DE1939F003E0984 /* CellNeiHanImage.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,7 +582,7 @@
 				F2F006EC1DE16845003E0984 /* VC_HomePage.swift in Sources */,
 				F2F611B61DE395DF005C8E88 /* M_Image.swift in Sources */,
 				F2F02A891DE17473003E0984 /* M_HomePageItems.swift in Sources */,
-				F2F02A8F1DE1939F003E0984 /* CellNieHanImage.swift in Sources */,
+				F2F02A8F1DE1939F003E0984 /* CellNeiHanImage.swift in Sources */,
 				F2F611B91DE3989C005C8E88 /* V_ImageList.swift in Sources */,
 				F2F02A831DE17035003E0984 /* Tools.swift in Sources */,
 			);
