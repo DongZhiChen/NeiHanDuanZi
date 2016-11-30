@@ -3,73 +3,101 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11517.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellImageID" rowHeight="241" id="KGk-i7-Jjw" customClass="CellNeiHanImage" customModule="NeiHanDuanZi" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="245"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellImageID" rowHeight="273" id="KGk-i7-Jjw" customClass="CellNeiHanImage" customModule="NeiHanDuanZi" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="277"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <frame key="frameInset" width="320" height="245"/>
+                <frame key="frameInset" width="320" height="277"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Le-wk-SX0">
-                        <frame key="frameInset" minX="8" minY="9" width="40" height="40"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sGc-Wt-j34">
-                        <frame key="frameInset" minX="56" minY="18" width="243" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UhP-Rc-NZj">
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Le-wk-SX0">
+                                <frame key="frameInset" minX="10" minY="5" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sGc-Wt-j34">
+                                <frame key="frameInset" minX="60" minY="15" width="250" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="Nkg-fs-mQT"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ykg-h5-ghY">
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ykg-h5-ghY">
-                        <frame key="frameInset" minX="8" minY="54" width="304" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T0q-Lb-tL4">
-                        <frame key="frameInset" minX="10" minY="83" width="300" height="108"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </imageView>
-                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="znL-hK-Rzd">
-                        <frame key="frameInset" minX="114" minY="207" width="46" height="30"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <state key="normal" title="贬"/>
-                        <connections>
-                            <action selector="BTN_Bury:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="5To-Xp-qNh"/>
-                        </connections>
-                    </button>
-                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Er5-dj-7lK">
-                        <frame key="frameInset" minX="182" minY="207" width="46" height="30"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <state key="normal" title="论"/>
-                        <connections>
-                            <action selector="BTN_Comment:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="kL0-sn-xjT"/>
-                        </connections>
-                    </button>
-                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nxm-DF-unL">
-                        <frame key="frameInset" minX="253" minY="207" width="46" height="30"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <state key="normal" title="share"/>
-                        <connections>
-                            <action selector="BTN_Share:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Tzw-Or-I94"/>
-                        </connections>
-                    </button>
-                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yTV-Qp-t5F">
-                        <frame key="frameInset" minX="10" minY="207" width="46" height="30"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <state key="normal" title="赞"/>
-                        <connections>
-                            <action selector="BTN_Digg:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="VMc-oz-3FH"/>
-                        </connections>
-                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="T0q-Lb-tL4"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BBU-NE-565">
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="znL-hK-Rzd">
+                                <frame key="frameInset" minX="124" minY="20" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="贬"/>
+                                <connections>
+                                    <action selector="BTN_Bury:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="5To-Xp-qNh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Er5-dj-7lK">
+                                <frame key="frameInset" minX="192" minY="20" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="论"/>
+                                <connections>
+                                    <action selector="BTN_Comment:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="kL0-sn-xjT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nxm-DF-unL">
+                                <frame key="frameInset" minX="263" minY="20" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="share"/>
+                                <connections>
+                                    <action selector="BTN_Share:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Tzw-Or-I94"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yTV-Qp-t5F">
+                                <frame key="frameInset" minX="18" minY="12" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="赞"/>
+                                <connections>
+                                    <action selector="BTN_Digg:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="VMc-oz-3FH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="p4a-Zg-JCJ"/>
+                        </constraints>
+                    </view>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="ykg-h5-ghY" firstAttribute="top" secondItem="UhP-Rc-NZj" secondAttribute="bottom" constant="5" id="DZN-Id-9fy"/>
+                    <constraint firstAttribute="trailing" secondItem="UhP-Rc-NZj" secondAttribute="trailing" id="Iar-zd-ZFh"/>
+                    <constraint firstAttribute="bottom" secondItem="BBU-NE-565" secondAttribute="bottom" id="QXc-j9-HOI"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ykg-h5-ghY" secondAttribute="trailing" constant="2" id="TLy-uf-SCW"/>
+                    <constraint firstItem="ykg-h5-ghY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="Vmh-0D-WtJ"/>
+                    <constraint firstAttribute="trailing" secondItem="BBU-NE-565" secondAttribute="trailing" id="dnw-xt-e0X"/>
+                    <constraint firstItem="BBU-NE-565" firstAttribute="top" secondItem="T0q-Lb-tL4" secondAttribute="bottom" constant="5" id="e1g-NG-xQS"/>
+                    <constraint firstItem="UhP-Rc-NZj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="eLk-y4-fWh"/>
+                    <constraint firstItem="UhP-Rc-NZj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="gum-n7-xCP"/>
+                    <constraint firstItem="BBU-NE-565" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="kDv-fJ-JVv"/>
+                    <constraint firstItem="T0q-Lb-tL4" firstAttribute="top" secondItem="ykg-h5-ghY" secondAttribute="bottom" constant="5" id="koW-HS-tA3"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="T0q-Lb-tL4" secondAttribute="trailing" constant="2" id="qE2-t5-jhS"/>
+                    <constraint firstItem="T0q-Lb-tL4" firstAttribute="top" secondItem="ykg-h5-ghY" secondAttribute="bottom" constant="5" id="qPm-8r-K8P"/>
+                    <constraint firstItem="T0q-Lb-tL4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="yCp-Uq-FYS"/>
+                </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="BTN_Bury" destination="znL-hK-Rzd" id="K30-z1-5JW"/>
@@ -81,7 +109,7 @@
                 <outlet property="LB_Content" destination="ykg-h5-ghY" id="CxD-Yz-ZTE"/>
                 <outlet property="LB_UserName" destination="sGc-Wt-j34" id="E78-nO-hOU"/>
             </connections>
-            <point key="canvasLocation" x="-110" y="-127"/>
+            <point key="canvasLocation" x="-110" y="-111.5"/>
         </tableViewCell>
     </objects>
 </document>

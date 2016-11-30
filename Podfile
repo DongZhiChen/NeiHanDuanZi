@@ -6,4 +6,6 @@ target 'NeiHanDuanZi' do
 pod 'Alamofire', '~> 4.0'
 pod 'SwiftyJSON', '~> 3.1.1'
 pod 'SDWebImage', '~>3.8'
+pod 'SnapKit', '~> 3.0.2'
+
 end

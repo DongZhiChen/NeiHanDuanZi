@@ -9,10 +9,17 @@
 import UIKit
 
 let cellImageID:String = "cellImageID"
+let userInfoHeight:CGFloat = 50.0;
+let bottomMenuHeight:CGFloat = 50.0;
+let contentMaxWidth:CGFloat = mainSize.width-30.0;
+let leftSpeace:CGFloat = 15.0;
 
 class CellNeiHanImage: UITableViewCell {
 
-  
+    
+    
+    
+    
     @IBOutlet weak var BTN_Share: UIButton!
     @IBOutlet weak var BTN_Comment: UIButton!
     @IBOutlet weak var BTN_Bury: UIButton!
@@ -32,6 +39,7 @@ class CellNeiHanImage: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+        
     }
     
     
@@ -39,7 +47,7 @@ class CellNeiHanImage: UITableViewCell {
     
         self.IV_UserHead.sd_setImage(with:URL.init(string: imageData.avatar_url));
         self.LB_UserName.text = imageData.name;
-        self.LB_Content.text = imageData.content;
+        self.LB_Content.text = imageData.content as String?;
         self.IV_Content.sd_setImage(with: URL.init(string: imageData.url));
         self.BTN_Bury.setTitle(String(imageData.bury_count), for: .normal);
         self.BTN_Digg.setTitle(String(imageData.digg_count), for: .normal);
@@ -58,6 +66,8 @@ class CellNeiHanImage: UITableViewCell {
     }
     @IBAction func BTN_Share(_ sender: AnyObject) {
     }
+    
+  
     
     
 }

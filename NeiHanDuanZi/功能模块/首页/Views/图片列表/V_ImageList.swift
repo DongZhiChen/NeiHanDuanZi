@@ -48,10 +48,11 @@ class V_ImageList: UIView ,UITableViewDelegate,UITableViewDataSource{
     
         Alamofire.request(API_Image).responseJSON { (response) in
             
-            let json = JSON.init(response.result.value);
-            let data = json["data"]["data"];
+            let json = JSON(response.result.value);
             
-            for (_,dictData):(String,JSON) in data {
+            let data = json["data"]["data"].arrayValue;
+            
+            for dictData:JSON in data {
                 
                 let imageModel:M_Image = M_Image.init(dict: dictData.dictionaryObject as! [String : AnyObject]);
                 self.arrayImageData .add(imageModel);
@@ -70,14 +71,27 @@ class V_ImageList: UIView ,UITableViewDelegate,UITableViewDataSource{
         let cell:CellNeiHanImage = tableView.dequeueReusableCell(withIdentifier: cellImageID) as! CellNeiHanImage;
         
         let imageModel:M_Image = self.arrayImageData[indexPath.row] as! M_Image;
-        cell.setCellNeiHanImageData(imageData: imageModel);
+        if (imageModel.url != nil) {
+        
+         cell.setCellNeiHanImageData(imageData: imageModel);
+            
+        }else{
+        
+            print(indexPath.row);
+            
+        }
+       
         return cell;
         
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
-        return 200.0;
+        let imageModel:M_Image = self.arrayImageData[indexPath.row] as! M_Image;
+        let cellHeight = imageModel.calculateCellHeight();
+        
+        return cellHeight;
+        
     }
 
 }
