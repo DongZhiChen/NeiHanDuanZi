@@ -28,8 +28,8 @@ class M_Image: NSObject {
     var category_name:String!;
     ///图片地址
     var url:String!;
-    var r_height:CGFloat!;
-    var r_width:CGFloat!;
+    var r_height:CGFloat = 0.0;
+    var r_width:CGFloat = 0.0;
     ///支持数
     var digg_count:NSInteger!;
     var repin_count:NSInteger!;
@@ -45,7 +45,6 @@ class M_Image: NSObject {
     init(dict:[String:AnyObject]) {
         
         super.init();
-        
         
         let json = JSON.init(dict);
         

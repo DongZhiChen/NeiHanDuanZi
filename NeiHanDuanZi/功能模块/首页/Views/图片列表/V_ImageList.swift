@@ -22,12 +22,14 @@ class V_ImageList: UIView ,UITableViewDelegate,UITableViewDataSource{
     TB_ImageList = UITableView.init(frame: self.bounds, style: .plain);
     TB_ImageList.delegate = self;
     TB_ImageList.dataSource = self;
-    TB_ImageList.register(UINib.init(nibName: "CellNeiHanImage", bundle: nil), forCellReuseIdentifier: cellImageID)
+   // TB_ImageList.register(UINib.init(nibName: "CellNeiHanImage", bundle: nil), forCellReuseIdentifier: cellImageID)
+    
+    TB_ImageList.register(UINib.init(nibName: "CellVideo", bundle: nil), forCellReuseIdentifier: "cell")
     self .addSubview(TB_ImageList);
     
     
     
-    self.requestImageData();
+    self.requestVideoData();
     
     }
     
@@ -42,7 +44,30 @@ class V_ImageList: UIView ,UITableViewDelegate,UITableViewDataSource{
         
     }
     
-    
+    func requestVideoData(){
+        
+        Alamofire.request(API_Video).responseJSON { (response) in
+            
+            let json = JSON(response.result.value);
+            
+            let data = json["data"]["data"].arrayValue;
+            
+            for dictData:JSON in data {
+                
+                let imageModel:M_Video = M_Video();
+                imageModel.initWithDict(dictJson: dictData);
+                
+                self.arrayImageData .add(imageModel);
+                
+            }
+            
+            self.TB_ImageList .reloadData();
+            
+        };
+        
+        
+    }
+
     
     func requestImageData(){
     
@@ -67,7 +92,15 @@ class V_ImageList: UIView ,UITableViewDelegate,UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+       
         
+        let cell:CellVideo = tableView.dequeueReusableCell(withIdentifier: "cell") as! CellVideo
+        let videoInfo:M_Video = self.arrayImageData[indexPath.row] as! M_Video
+        
+        cell.setVideoInfo(videoInfo: videoInfo)
+        return cell;
+        
+        /*
         let cell:CellNeiHanImage = tableView.dequeueReusableCell(withIdentifier: cellImageID) as! CellNeiHanImage;
         
         let imageModel:M_Image = self.arrayImageData[indexPath.row] as! M_Image;
@@ -82,15 +115,15 @@ class V_ImageList: UIView ,UITableViewDelegate,UITableViewDataSource{
         }
        
         return cell;
-        
+        */
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
-        let imageModel:M_Image = self.arrayImageData[indexPath.row] as! M_Image;
-        let cellHeight = imageModel.calculateCellHeight();
+//        let imageModel:M_Image = self.arrayImageData[indexPath.row] as! M_Image;
+//        let cellHeight = imageModel.calculateCellHeight();
         
-        return cellHeight;
+        return 300;
         
     }
 
